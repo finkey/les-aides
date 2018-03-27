@@ -78,7 +78,7 @@ class ApiBase
         try {
             $response = ($this->getClient()->request($method, $urn, array_merge([
                 'http_errors' => true
-            ]), $options));
+            ], $options)));
             return $this->processResponse($response);
         } catch (ClientException $e) {
             $this->processException($e);
