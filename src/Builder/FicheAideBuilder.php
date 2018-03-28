@@ -64,7 +64,7 @@ class FicheAideBuilder
         }
 
         return [
-            'rid' => $this->requestId,
+            'requete' => $this->requestId,
             'dispositif' => $this->dispositif
         ];
     }
